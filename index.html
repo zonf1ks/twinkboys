@@ -5,77 +5,85 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>TwinkBoys — Official Page</title>
   <meta name="description" content="TwinkBoys — дуэт моделей. Следите за нами онлайн.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top, #1a1a1d, #0d0d0f);
       color: #fff;
       text-align: center;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      padding: 60px 20px 30px;
+      justify-content: center;
+      padding: 20px;
     }
     h1 {
-      font-size: 52px;
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: uppercase;
       margin-bottom: 10px;
-      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
     }
     p.lead {
-      font-size: 20px;
-      color: #f1f1f1;
+      font-size: 1.2rem;
       margin-bottom: 30px;
+      color: #ccc;
     }
-    img.hero {
-      max-width: 220px;
+    .avatar {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      border: 4px solid rgba(255,255,255,0.8);
-      margin: 20px 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      border: 4px solid #ff0080;
+      box-shadow: 0 0 15px #ff0080, 0 0 30px #ff0080;
+      margin: 20px auto;
+      object-fit: cover;
     }
     .links {
       margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
     .btn {
-      display: inline-block;
-      margin: 10px;
       padding: 14px 28px;
-      background: rgba(0,0,0,0.25);
-      backdrop-filter: blur(8px);
-      border-radius: 12px;
+      background: #ff0080;
       color: #fff;
+      border-radius: 50px;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 0 15px #ff0080, 0 0 30px #ff0080;
       transition: all 0.3s;
     }
     .btn:hover {
-      background: rgba(0,0,0,0.45);
-      transform: translateY(-2px);
+      background: #ff3399;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff0080, 0 0 40px #ff0080;
     }
     footer {
-      margin-top: auto;
-      padding: 20px;
+      margin-top: 40px;
       font-size: 14px;
-      color: rgba(255,255,255,0.8);
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <header>
+  <main>
     <h1>TwinkBoys</h1>
     <p class="lead">Дуэт моделей — стримы, общение и шоу</p>
-    <img class="hero" src="https://placehold.co/400x400/png" alt="TwinkBoys">
+    <img src="https://placehold.co/400x400/png" alt="TwinkBoys" class="avatar">
     <div class="links">
-      <a class="btn" href="https://bongacams.com/ВАШ_НИК">Смотреть на BongaCams</a>
+      <a class="btn" href="https://bongacams.com/ВАШ_НИК">BongaCams</a>
       <a class="btn" href="https://twitter.com/ВАШ_НИК">Twitter</a>
       <a class="btn" href="https://t.me/ВАШ_НИК">Telegram</a>
       <a class="btn" href="mailto:you@example.com">Email</a>
     </div>
-  </header>
+  </main>
   <footer>
     © <span id="year"></span> TwinkBoys
   </footer>
